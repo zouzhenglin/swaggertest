@@ -14,6 +14,7 @@ public class OrderController {
     private OrderService orderService;
     @GetMapping("/orderAdd")
     public Boolean orderAdd(Integer id,String name){
+        System.out.println("jskldjfskljfd");
         Boolean results=orderService.orderAdd(id,name);
         return results;
     }
